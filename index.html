@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-
 <head>
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221218214657">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230101191838">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +14,9 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header _anim-on _anim-off">
 			<div class="header__container">
-				<div class="header__block block-header">
+				<div class="header__block block-header _anim-on">
 					<div class="block-header__logo logo">
 						<a href="#" class="logo__text">Юлия <span class="logo__color">Валерьевна</span></a>
 					</div>
@@ -41,26 +40,46 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__main main-section">
-				<div class="main-section__container">
-					<div class="main-section__content">
-						<div class="main-section__title main-title">
-							<div class="main-title__label">воспитатель</div>
-							<h1 class="main-title__name">Спесивцева <br><span>Юлия Валерьевна</span></h1>
+			<div class="page__wrapper">
+				<section class="page__main main-section">
+					<div class="screen-content main-section__container">
+						<div class="main-section__content">
+							<div class="main-section__title main-title">
+								<div class="main-title__label _anim-on _anim-off">воспитатель</div>
+								<h1 class="main-title__name _anim-on _anim-off">Спесивцева <br><span class="asd">Юлия Валерьевна</span></h1>
+							</div>
+							<div class="main-section__text text _anim-on _anim-off">Участница краевого профессионального конкурса «Воспитатель
+								года Кубани» в 2023 году"</div>
+							<div class="main-section__social social _anim-on _anim-off">
+								<a href="#" class="social__link _icon-telegram"></a>
+								<a href="#" class="social__link _icon-whatsapp"></a>
+								<a href="#" class="social__link _icon-youtube"></a>
+							</div>
+							<div class="main-section__button button _anim-on _anim-off"><a href="#" class="button__link">Связаться</a></div>
 						</div>
-						<div class="main-section__text text">Участница краевого профессионального конкурса «Воспитатель года Кубани» в 2023 году"</div>
-						<div class="main-section__social social">
-							<a href="#" class="social__link _icon-telegram"></a>
-							<a href="#" class="social__link _icon-whatsapp"></a>
-							<a href="#" class="social__link _icon-youtube"></a>
+						<div class="main-section__image image-main _anim-on _anim-off">
+							<picture><source srcset="img/image-01.webp" type="image/webp"><img class="image-main__photo" src="img/image-01.png" alt="#"></picture>
 						</div>
-						<a href="#" class="main-section__button button">Связаться</a>
 					</div>
-					<div class="main-section__image image-main">
-						<picture><source srcset="img/image-01.webp" type="image/webp"><img class="image-main__photo" src="img/image-01.png" alt="#"></picture>
+				</section>
+				<section class="page__credo credo">
+					<div class="screen-content credo__container">
+						<div class="credo__image image-credo">
+							<picture><source srcset="img/image-02.webp" type="image/webp"><img class="image-credo__photo" src="img/image-02.png" alt="#"></picture>
+						</div>
+						<div class="credo__content">
+							<div class="credo__title title-credo">
+								<h2 class="title-credo__heading"><span>мое кредо</span></h2>
+								<div class="title-credo__subtitle">“Верить в возможности каждого ребёнка”</div>
+							</div>
+							<div class="credo__text text">В то доброе, что заложено в нём, в перспективы его развития,
+								находить его сильные стороны. Поступать так, чтобы каждый ребёнок почувствовал: возможности
+								заложены в нём самом."</div>
+							<div class="credo__button button"><a href="#" class="button__link">Обо мне</a></div>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -79,7 +98,8 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20221218214657"></script>
+	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20230101191838"></script> -->
+	<script src="js/app.min.js?_v=20230101191838"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230101191838">
+	<link rel="stylesheet" href="css/style.css?_v=20230102234542">
 	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<header class="header _anim-on _anim-off">
 			<div class="header__container">
-				<div class="header__block block-header _anim-on">
+				<div class="header__block block-header">
 					<div class="block-header__logo logo">
 						<a href="#" class="logo__text">Юлия <span class="logo__color">Валерьевна</span></a>
 					</div>
@@ -33,7 +33,7 @@
 						</nav>
 					</div>
 					<div class="block-header__actions">
-						<a href="#" class="button-theme _icon-moon" id="theme-button"></a>
+						<a href="#" onclick="return false" class="button-theme _icon-moon" id="theme-button"></a>
 						<button type="button" class="icon-menu"><span></span></button>
 					</div>
 				</div>
@@ -42,7 +42,7 @@
 		<main class="page">
 			<div class="page__wrapper">
 				<section class="page__main main-section">
-					<div class="screen-content main-section__container">
+					<div class="main-section__container">
 						<div class="main-section__content">
 							<div class="main-section__title main-title">
 								<div class="main-title__label _anim-on _anim-off">воспитатель</div>
@@ -63,19 +63,33 @@
 					</div>
 				</section>
 				<section class="page__credo credo">
-					<div class="screen-content credo__container">
-						<div class="credo__image image-credo">
+					<div class="credo__container">
+						<div class="credo__image image-credo _anim-on _anim-off">
 							<picture><source srcset="img/image-02.webp" type="image/webp"><img class="image-credo__photo" src="img/image-02.png" alt="#"></picture>
 						</div>
 						<div class="credo__content">
-							<div class="credo__title title-credo">
+							<div class="credo__title title-credo _anim-on _anim-off">
 								<h2 class="title-credo__heading"><span>мое кредо</span></h2>
 								<div class="title-credo__subtitle">“Верить в возможности каждого ребёнка”</div>
 							</div>
 							<div class="credo__text text">В то доброе, что заложено в нём, в перспективы его развития,
 								находить его сильные стороны. Поступать так, чтобы каждый ребёнок почувствовал: возможности
 								заложены в нём самом."</div>
-							<div class="credo__button button"><a href="#" class="button__link">Обо мне</a></div>
+							<div class="credo__button button"><a href="javascript://" class="button__link">Обо мне</a></div>
+						</div>
+					</div>
+				</section>
+				<section class="page__business-card business-card">
+					<div class="business-card__container">
+						<div class="business-card__content">
+							<div class="business-card__title title-business-card">
+								<h2 class="title-business-card__heading">Визитная карточка <span>“Я педагог”</span></h2>
+								<div class="title-business-card__text text">Педагогически мероприятия, методики воспитания и образования</div>
+							</div>
+							<div class="business-card__button button"><a href="#" class="button__link">Смотреть все видео</a></div>
+						</div>
+						<div class="business-card__video video-business-card">
+							<iframe class="video-business-card__teacher" width="396" height="248" src="https://www.youtube.com/embed/7OOJJwY6GHk" title="YouTube video player" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 						</div>
 					</div>
 				</section>
@@ -98,8 +112,8 @@
 </div>
  -->
 
-	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20230101191838"></script> -->
-	<script src="js/app.min.js?_v=20230101191838"></script>
+	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20230102234542"></script> -->
+	<script src="js/app.min.js?_v=20230102234542"></script>
 </body>
 
 </html>

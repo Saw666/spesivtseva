@@ -68,6 +68,29 @@
             }));
         }
     }), 0);
+    const animItems = document.querySelectorAll("._anim-on");
+    if (animItems.length > 0) {
+        window.addEventListener("scroll", animOnScroll);
+        function animOnScroll() {
+            for (let index = 0; index < animItems.length; index++) {
+                const animItem = animItems[index];
+                const animItemHeight = animItem.offsetHeight;
+                const animItemOffset = offset(animItem).top;
+                const animStart = 4;
+                let animItemPoint = window.innerHeight - animItemHeight / animStart;
+                if (animItemHeight > window.innerHeight) animItemPoint = window.innerHeight - window.innerHeight / animStart;
+                if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) animItem.classList.add("_loaded"); else if (!animItem.classList.contains("_anim-off")) animItem.classList.remove("_loaded");
+            }
+        }
+        function offset(el) {
+            const react = el.getBoundingClientRect(), scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            return {
+                top: react.top + scrollTop,
+                left: react.left + scrollLeft
+            };
+        }
+        animOnScroll();
+    }
     const themeButton = document.getElementById("theme-button");
     const darkTheme = "dark-theme";
     const iconTheme = "_icon-sun";
@@ -85,31 +108,6 @@
         localStorage.setItem("selected-theme", getCurrentTheme());
         localStorage.setItem("selected-icon", getCurrentIcon());
     }));
-    const animItems = document.querySelectorAll("._anim-on");
-    if (animItems.length > 0) {
-        window.addEventListener("scroll", animOnScroll);
-        function animOnScroll() {
-            for (let index = 0; index < animItems.length; index++) {
-                const animItem = animItems[index];
-                const animItemHeight = animItem.offsetHeight;
-                const animItemOffset = offset(animItem).top;
-                const animStart = 2;
-                let animItemPoint = window.innerHeight - animItemHeight / animStart;
-                if (animItemHeight > window.innerHeight) animItemPoint = window.innerHeight - window.innerHeight / animStart;
-                if (pageYOffset > animItemOffset - animItemPoint && pageYOffset < animItemOffset + animItemHeight) animItem.classList.add("_loaded"); else if (!animItem.classList.contains("_anim-off")) animItem.classList.remove("_loaded");
-            }
-        }
-        function offset(el) {
-            const react = el.getBoundingClientRect(), scrollLeft = window.pageXOffset || document.documentElement.scrollLeft, scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            return {
-                top: react.top + scrollTop,
-                left: react.left + scrollLeft
-            };
-        }
-        setTimeout((() => {
-            animOnScroll();
-        }), 300);
-    }
     window["FLS"] = true;
     isWebp();
     menuInit();

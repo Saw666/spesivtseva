@@ -855,6 +855,14 @@ div::-webkit-scrollbar {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.business-card__video {
+  width: 100%;
+  max-width: 396px;
+  max-height: 248px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
 .title-business-card__heading {
   font-family: "Roboto";
   font-weight: 700;
@@ -890,19 +898,7 @@ div::-webkit-scrollbar {
   padding-top: 40px;
 }
 
-.video-business-card {
-  position: relative;
-  padding-top: 56.25%;
-}
-
 .video-business-card__teacher {
-  position: absolute;
-  -o-object-fit: cover;
-     object-fit: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   border-radius: 25px;
 }
 
@@ -956,6 +952,12 @@ div::-webkit-scrollbar {
   }
 
   .business-card__content {
+    text-align: center;
+  }
+
+  .business-card__video {
+    -ms-grid-column-align: center;
+        justify-self: center;
     text-align: center;
   }
 }
@@ -1114,15 +1116,15 @@ div::-webkit-scrollbar {
     margin-bottom: 0.625rem;
   }
 
-@supports (padding-top: clamp( 0.625rem , 0.2283402923rem  +  1.9832985386vw , 1.8125rem )) {
+@supports (padding-top: clamp( 1.5625rem , 1.4789926931rem  +  0.4175365344vw , 1.8125rem )) {
     .main-section__button {
-      padding-top: clamp( 0.625rem , 0.2283402923rem  +  1.9832985386vw , 1.8125rem );
+      padding-top: clamp( 1.5625rem , 1.4789926931rem  +  0.4175365344vw , 1.8125rem );
     }
 }
 
-@supports not (padding-top: clamp( 0.625rem , 0.2283402923rem  +  1.9832985386vw , 1.8125rem )) {
+@supports not (padding-top: clamp( 1.5625rem , 1.4789926931rem  +  0.4175365344vw , 1.8125rem )) {
     .main-section__button {
-      padding-top: calc(0.625rem + 1.1875 * (100vw - 20rem) / 59.875);
+      padding-top: calc(1.5625rem + 0.25 * (100vw - 20rem) / 59.875);
     }
 }
 
@@ -1246,6 +1248,8 @@ div::-webkit-scrollbar {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 1.5625rem;
+    padding-bottom: 2.8125rem;
   }
 
   .credo__text {
@@ -1267,6 +1271,30 @@ div::-webkit-scrollbar {
     font-size: 1.75rem;
     line-height: 100%;
   }
+
+@supports (max-width: clamp( 16.25rem , -0.75rem  +  85vw , 24.75rem )) {
+    .video-business-card__teacher {
+      max-width: clamp( 16.25rem , -0.75rem  +  85vw , 24.75rem );
+    }
+}
+
+@supports not (max-width: clamp( 16.25rem , -0.75rem  +  85vw , 24.75rem )) {
+    .video-business-card__teacher {
+      max-width: calc(16.25rem + 8.5 * (100vw - 20rem) / 10);
+    }
+}
+
+@supports (max-height: clamp( 13.125rem , 8.375rem  +  23.75vw , 15.5rem )) {
+    .video-business-card__teacher {
+      max-height: clamp( 13.125rem , 8.375rem  +  23.75vw , 15.5rem );
+    }
+}
+
+@supports not (max-height: clamp( 13.125rem , 8.375rem  +  23.75vw , 15.5rem )) {
+    .video-business-card__teacher {
+      max-height: calc(13.125rem + 2.375 * (100vw - 20rem) / 10);
+    }
+}
 }
 
 @media (any-hover: hover) {

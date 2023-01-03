@@ -855,12 +855,6 @@ div::-webkit-scrollbar {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.business-card__video {
-  -ms-grid-column-align: end;
-      justify-self: end;
-  padding: 5px;
-}
-
 .title-business-card__heading {
   font-family: "Roboto";
   font-weight: 700;
@@ -896,14 +890,20 @@ div::-webkit-scrollbar {
   padding-top: 40px;
 }
 
+.video-business-card {
+  position: relative;
+  padding-top: 56.25%;
+}
+
 .video-business-card__teacher {
+  position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   border-radius: 25px;
-  width: 396px;
-  height: 248px;
 }
 
 @media (min-width: 47.99875em) {
@@ -957,11 +957,6 @@ div::-webkit-scrollbar {
 
   .business-card__content {
     text-align: center;
-  }
-
-  .business-card__video {
-    -ms-grid-column-align: center;
-        justify-self: center;
   }
 }
 
@@ -1272,30 +1267,6 @@ div::-webkit-scrollbar {
     font-size: 1.75rem;
     line-height: 100%;
   }
-
-@supports (width: clamp( 16.25rem , 13.4107515658rem  +  14.1962421712vw , 24.75rem )) {
-    .video-business-card__teacher {
-      width: clamp( 16.25rem , 13.4107515658rem  +  14.1962421712vw , 24.75rem );
-    }
-}
-
-@supports not (width: clamp( 16.25rem , 13.4107515658rem  +  14.1962421712vw , 24.75rem )) {
-    .video-business-card__teacher {
-      width: calc(16.25rem + 8.5 * (100vw - 20rem) / 59.875);
-    }
-}
-
-@supports (height: clamp( 13.125rem , 12.3316805846rem  +  3.9665970772vw , 15.5rem )) {
-    .video-business-card__teacher {
-      height: clamp( 13.125rem , 12.3316805846rem  +  3.9665970772vw , 15.5rem );
-    }
-}
-
-@supports not (height: clamp( 13.125rem , 12.3316805846rem  +  3.9665970772vw , 15.5rem )) {
-    .video-business-card__teacher {
-      height: calc(13.125rem + 2.375 * (100vw - 20rem) / 59.875);
-    }
-}
 }
 
 @media (any-hover: hover) {

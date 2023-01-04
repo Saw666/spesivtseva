@@ -89,7 +89,9 @@
                 left: react.left + scrollLeft
             };
         }
-        animOnScroll();
+        setTimeout((() => {
+            animOnScroll();
+        }), 300);
     }
     const themeButton = document.getElementById("theme-button");
     const darkTheme = "dark-theme";

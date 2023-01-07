@@ -1973,9 +1973,9 @@ div::-webkit-scrollbar {
   height: 3rem;
   border-radius: 31px;
   padding: 0rem 1.25rem;
-  background: rgba(255, 255, 255, 0.75);
+  background-color: rgb(223, 223, 223);
   -webkit-box-shadow: -3px -3px 2px rgba(153, 153, 153, 0.0901960784), 3px 3px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: -3px -3px 2px rgba(153, 153, 153, 0.0901960784), 3px 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: -3px -3px 2px rgba(153, 153, 153, 0.0901960784), 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .form__input::-webkit-input-placeholder {
@@ -2064,9 +2064,9 @@ div::-webkit-scrollbar {
 
 .dark-theme .form__input {
   color: #9c9a9a;
-  background: rgba(34, 34, 34, 0.75);
+  background-color: rgba(34, 34, 34, 0.75);
   -webkit-box-shadow: -2px -3px 3px rgba(255, 255, 255, 0.0901960784), 3px 3px 2px rgba(0, 0, 0, 0.3);
-          box-shadow: -2px -3px 3px rgba(255, 255, 255, 0.0901960784), 3px 3px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: -2px -3px 3px rgba(255, 255, 255, 0.0901960784), 3px 3px 2px rgba(0, 0, 0, 0.3);
 }
 
 .form__button {

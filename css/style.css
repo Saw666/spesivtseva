@@ -27,28 +27,15 @@
   display: block;
 }
 
-._icon-map-location:before {
-  content: "\e90a";
-}
-
-._icon-map:before {
-  content: "\e909";
-}
-
-._icon-email:before {
-  content: "\e907";
-}
-
-._icon-phone:before {
-  content: "\e908";
-}
-
 ._icon-moon:before {
   content: "\e905";
 }
 
 ._icon-sun:before {
   content: "\e906";
+}
+
+.dark-theme ._icon-sun:before {
   color: rgb(255, 255, 255);
 }
 

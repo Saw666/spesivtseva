@@ -3471,30 +3471,20 @@
     }
     const themeButton = document.getElementById("theme-button");
     const darkTheme = "dark-theme";
-    const lightTheme = "light-theme";
     const iconTheme = "_icon-sun";
-    const iconThemeMoon = "_icon-moon";
     const selectedTheme = localStorage.getItem("selected-theme");
     const selectedIcon = localStorage.getItem("selected-icon");
-    const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? "light" : "dark";
-    const getCurrentTheme1 = () => document.body.classList.contains(lightTheme) ? "dark" : "light";
+    const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? "dark" : "light";
     const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? "_icon-moon" : "_icon-sun";
-    const getCurrentIconSun = () => themeButton.classList.contains(iconThemeMoon) ? "_icon-sun" : "_icon-moon";
     if (selectedTheme) {
         document.body.classList["dark" === selectedTheme ? "add" : "remove"](darkTheme);
-        document.body.classList["light" === selectedTheme ? "add" : "remove"](lightTheme);
         themeButton.classList["_icon-moon" === selectedIcon ? "add" : "remove"](iconTheme);
-        themeButton.classList["_icon-sun" === selectedIcon ? "add" : "remove"](iconThemeMoon);
     }
     themeButton.addEventListener("click", (() => {
         document.body.classList.toggle(darkTheme);
-        document.body.classList.toggle(lightTheme);
         themeButton.classList.toggle(iconTheme);
-        themeButton.classList.toggle(iconThemeMoon);
         localStorage.setItem("selected-theme", getCurrentTheme());
-        localStorage.setItem("selected-theme", getCurrentTheme1());
         localStorage.setItem("selected-icon", getCurrentIcon());
-        localStorage.setItem("selected-icon", getCurrentIconSun());
     }));
     document.addEventListener("DOMContentLoaded", (function() {
         const form = document.getElementById("form");

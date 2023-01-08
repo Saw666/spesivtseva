@@ -60,11 +60,6 @@
             }
         }));
     }
-    function functions_FLS(message) {
-        setTimeout((() => {
-            if (window.FLS) console.log(message);
-        }), 0);
-    }
     class Popup {
         constructor(options) {
             let config = {
@@ -302,9 +297,7 @@
             const focusable = this.previousOpen.element.querySelectorAll(this._focusEl);
             if (!this.isOpen && this.lastFocusEl) this.lastFocusEl.focus(); else focusable[0].focus();
         }
-        popupLogging(message) {
-            this.options.logging ? functions_FLS(`[Попапос]: ${message}`) : null;
-        }
+        popupLogging(message) {}
     }
     modules_flsModules.popup = new Popup({});
     function ssr_window_esm_isObject(obj) {

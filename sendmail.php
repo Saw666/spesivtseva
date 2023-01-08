@@ -17,7 +17,7 @@ $mail = new PHPMailer(true);
 // $mail->Host = 'smtp.gmail.com';
 // $mail->Port = '465';
 // $mail->Username   = 'vitalikruspashnev1@gmail.com'; // SMTP account username
-// $mail->Password   = 'Zaq13edCxZ';
+// $mail->Password   = '';
 // $mail->SMTPKeepAlive = true;
 // $mail->Mailer = "smtp";
 // $mail->IsSMTP(); // telling the class to use SMTP

@@ -136,7 +136,6 @@
             this.options.init ? this.initPopups() : null;
         }
         initPopups() {
-            this.popupLogging(`Проснулся`);
             this.eventsPopup();
         }
         eventsPopup() {
@@ -237,7 +236,6 @@
                             popup: this
                         }
                     }));
-                    this.popupLogging(`Открыл попап`);
                 } else this.popupLogging(`Ой ой, такого попапа нет.Проверьте корректность ввода. `);
             }
         }
@@ -272,7 +270,6 @@
             setTimeout((() => {
                 this._focusTrap();
             }), 50);
-            this.popupLogging(`Закрыл попап`);
         }
         _getHash() {
             if (this.options.hashSettings.location) this.hash = this.targetOpen.selector.includes("#") ? this.targetOpen.selector : this.targetOpen.selector.replace(".", "#");

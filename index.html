@@ -6,19 +6,19 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230107183915">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230108152346">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="dark-theme">
 	<div class="wrapper">
 		<header class="header _anim-on _anim-off">
 			<div class="header__container">
 				<div class="header__block block-header">
 					<div class="block-header__logo logo">
-						<a href="#" class="logo__text">Юлия <span class="logo__color">Валерьевна</span></a>
+						<a href="index.html" class="logo__text">Юлия <span class="logo__color">Валерьевна</span></a>
 					</div>
 					<div class="block-header__menu menu">
 						<nav class="menu__body">
@@ -33,7 +33,7 @@
 						</nav>
 					</div>
 					<div class="block-header__actions">
-						<a href="#" onclick="return false" class="button-theme _icon-moon" id="theme-button"></a>
+						<a href="#" onclick="return false" class="button-theme _icon-sun" id="theme-button"></a>
 						<button type="button" class="icon-menu"><span></span></button>
 					</div>
 				</div>
@@ -46,14 +46,14 @@
 						<div class="main-section__content">
 							<div class="main-section__title main-title">
 								<div class="main-title__label _anim-on _anim-off">воспитатель</div>
-								<h1 class="main-title__name _anim-on _anim-off">Спесивцева <br><span class="asd">Юлия
+								<h1 class="main-title__name _anim-on _anim-off">Спесивцева <br><span>Юлия
 										Валерьевна</span></h1>
 							</div>
 							<div class="main-section__text text _anim-on _anim-off">Участница краевого профессионального
 								конкурса «Воспитатель
 								года Кубани» в 2023 году"</div>
 							<div class="main-section__social social _anim-on _anim-off">
-								<a href="https://t.me/saw_666_rus" target="_blank" class="social__link _icon-telegram"></a>
+								<a href="https://t.me/yuliaspesivceva" target="_blank" class="social__link _icon-telegram"></a>
 								<a href="https://api.whatsapp.com/send/?phone=79189701121&text=Здравствуйте%2C+у+меня+есть+вопрос" target="_blank" class="social__link _icon-whatsapp"></a>
 								<a href="https://www.youtube.com/@user-vh2xn2vv1o/featured" target="_blank" class="social__link _icon-youtube"></a>
 							</div>
@@ -175,7 +175,7 @@
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/01.webp" type="image/webp"><img src="img/progress/01.jpg" alt="Сharter"></picture>
+											<picture><source srcset="img/progress/09.webp" type="image/webp"><img src="img/progress/09.jpg" alt="Сharter"></picture>
 										</div>
 									</article>
 								</div>
@@ -231,7 +231,7 @@
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/09.webp" type="image/webp"><img src="img/progress/09.jpg" alt="Сharter"></picture>
+											<picture><source srcset="img/progress/01.webp" type="image/webp"><img src="img/progress/01.jpg" alt="Сharter"></picture>
 										</div>
 									</article>
 								</div>
@@ -244,7 +244,7 @@
 						<h2 class="map__heading _anim-on _anim-off"><span>Контакты</span></h2>
 						<div class="map__block block-map _anim-on _anim-off">
 							<div class="block-map__shell">
-								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aca02c5802d3a0679e229580203411f0e948e692e88ca4964baaa5475d321346f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false&_v=20230107183915"></script>
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aca02c5802d3a0679e229580203411f0e948e692e88ca4964baaa5475d321346f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false&_v=20230108152346"></script>
 							</div>
 						</div>
 					</div>
@@ -252,15 +252,18 @@
 				<section class="page__contacts contacts">
 					<div class="contacts__container">
 						<div class="contacts__content">
-							<form action="#" class="contacts__form form _anim-on _anim-off">
+							<form id="form" action="#" class="contacts__form form _anim-on _anim-off">
 								<div class="form__item">
-									<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name" class="form__input">
+									<input id="formName" type="text" name="name" placeholder="Введите Имя и Фамилию" class="form__input _req _name">
 								</div>
 								<div class="form__item">
-									<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email" class="form__input">
+									<input id="formEmail" type="text" name="email" placeholder="Введите ваш email" class="form__input _req _email">
 								</div>
 								<div class="form__item">
-									<textarea autocomplete="off" name="form[]" placeholder="Message" data-error="Error" class="form__input"></textarea>
+									<input id="formPhone" type="text" name="phone" placeholder="Введите номер телефона" class="form__input _req _phone">
+								</div>
+								<div class="form__item">
+									<textarea placeholder="Введите ваше сообщение" name="message" class="form__input _req "></textarea>
 								</div>
 								<div class="form__item">
 									<button type="submit" class="form__button button__link">Отправить</button>
@@ -279,15 +282,14 @@
 										<div class="list-contacts__icon _icon-phone"></div>
 										<div class="list-contacts__body">
 											<div class="list-contacts__title"><span>Телефон</span></div>
-											<a href="tel:88619545335" class="list-contacts__text">8(861)9545335;&nbsp;</a>
-											<a href="tel:88619545335" class="list-contacts__text text-line-height">8(861)9545335;</a>
+											<a href="tel:+79189701121" class="list-contacts__text">+7(918)970-11-21</a>
 										</div>
 									</li>
 									<li class="list-contacts_item">
 										<div class="list-contacts__icon _icon-email"></div>
 										<div class="list-contacts__body">
 											<div class="list-contacts__title"><span>E-Mail</span></div>
-											<a href="mailto:nvk-kazachok@yandex.ru" class="list-contacts__text">nvk-kazachok@yandex.ru</a>
+											<a href="mailto:nvk-kazachok@yandex.ru" class="list-contacts__text">yulia.spesivceva@mail.ru</a>
 										</div>
 									</li>
 								</ul>
@@ -299,7 +301,7 @@
 					<div class="social-section__container">
 						<div class="social-section__content _anim-on _anim-off">
 							<div class="social-section__link social">
-								<a href="https://t.me/saw_666_rus" target="_blank" class="social__link _icon-telegram"></a>
+								<a href="https://t.me/yuliaspesivceva" target="_blank" class="social__link _icon-telegram"></a>
 								<a href="https://api.whatsapp.com/send/?phone=79189701121&text=Здравствуйте%2C+у+меня+есть+вопрос" target="_blank" class="social__link _icon-whatsapp"></a>
 								<a href="https://www.youtube.com/@user-vh2xn2vv1o/featured" target="_blank" class="social__link _icon-youtube"></a>
 							</div>
@@ -313,20 +315,40 @@
 			</div>
 		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="popup-message-sent" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-cross"></button>
+				<div class="popup__text">
+					Данные отправлены !
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
- -->
 
-	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20230107183915"></script> -->
-	<script src="js/app.min.js?_v=20230107183915"></script>
+	<div id="popup-message-error" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-cross"></button>
+				<div class="popup__text">
+					Ошибка!
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-validate" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-cross"></button>
+				<div class="popup__text">
+					Заполните обязательные поля !
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20230108152346"></script> -->
+	<script src="js/app.min.js?_v=20230108152346"></script>
 </body>
 
 </html>

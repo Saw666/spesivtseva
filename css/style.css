@@ -49,6 +49,7 @@
 
 ._icon-sun:before {
   content: "\e906";
+  color: rgb(255, 255, 255);
 }
 
 ._icon-instagram:before {
@@ -74,6 +75,10 @@
 ._icon-youtube:before {
   content: "\e904";
   color: #f00;
+}
+
+._icon-cross:before {
+  content: "\ea0f";
 }
 
 ._icon-arrow-right:before {
@@ -199,6 +204,119 @@ div::-webkit-scrollbar {
   max-width: 79.875rem;
   margin: 0 auto;
   padding: 0 1.5625rem;
+}
+
+body::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.8s ease 0s;
+  -o-transition: opacity 0.8s ease 0s;
+  transition: opacity 0.8s ease 0s;
+  pointer-events: none;
+  z-index: 149;
+}
+
+.popup-show body::after {
+  opacity: 1;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 30px 10px;
+  -webkit-transition: visibility 0.8s ease 0s;
+  -o-transition: visibility 0.8s ease 0s;
+  transition: visibility 0.8s ease 0s;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.popup_show {
+  z-index: 150;
+  visibility: visible;
+  overflow: auto;
+  pointer-events: auto;
+}
+
+.popup_show .popup__content {
+  visibility: visible;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  visibility: hidden;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  -o-transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  background-color: #eee;
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  border-radius: 20px;
+}
+
+.lock .popup__content {
+  visibility: visible;
+}
+
+.dark-theme .popup__content {
+  background-color: #141414;
+}
+
+.popup__close {
+  margin-bottom: 1.875rem;
+}
+
+.dark-theme .popup__close {
+  color: #e1e3e6;
+}
+
+.popup__text {
+  text-align: center;
+  font-size: 1.875rem;
+}
+
+.dark-theme .popup__text {
+  color: #e1e3e6;
 }
 
 [class*=-ibg] {
@@ -1968,6 +2086,10 @@ div::-webkit-scrollbar {
   gap: 1.25rem;
 }
 
+.form__item {
+  text-align: center;
+}
+
 .form__input {
   width: 100%;
   height: 3rem;
@@ -1980,22 +2102,27 @@ div::-webkit-scrollbar {
 
 .form__input::-webkit-input-placeholder {
   color: #9c9a9a;
+  font-family: "Roboto";
 }
 
 .form__input::-moz-placeholder {
   color: #9c9a9a;
+  font-family: "Roboto";
 }
 
 .form__input:-ms-input-placeholder {
   color: #9c9a9a;
+  font-family: "Roboto";
 }
 
 .form__input::-ms-input-placeholder {
   color: #9c9a9a;
+  font-family: "Roboto";
 }
 
 .form__input::placeholder {
   color: #9c9a9a;
+  font-family: "Roboto";
 }
 
 .dark-theme .form__input::-webkit-input-placeholder {
@@ -2150,6 +2277,12 @@ textarea.form__input {
   color: #e1e3e6;
 }
 
+._error {
+  border-radius: 31px;
+  -webkit-box-shadow: 0 0 15px #ff0000;
+  box-shadow: 0 0 15px #ff0000;
+}
+
 .social-section__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2291,20 +2424,6 @@ textarea.form__input {
   .slider__controls {
     padding-top: 2.875rem;
   }
-}
-
-@media (max-width: 1060px) {
-@supports (line-height: clamp( 1.25rem , 0.6236951983rem  +  3.1315240084vw , 3.125rem )) {
-    .text-line-height {
-      line-height: clamp( 1.25rem , 0.6236951983rem  +  3.1315240084vw , 3.125rem );
-    }
-}
-
-@supports not (line-height: clamp( 1.25rem , 0.6236951983rem  +  3.1315240084vw , 3.125rem )) {
-    .text-line-height {
-      line-height: calc(1.25rem + 1.875 * (100vw - 20rem) / 59.875);
-    }
-}
 }
 
 @media (max-width: 660px) {

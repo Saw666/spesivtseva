@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230108200155">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230115154239">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,7 @@
 					<div class="block-header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#" class="menu__link">Обо мне</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link">Обо мне</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Видео</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Родителям</a></li>
 								<li class="menu__item"><a href="#" class="menu__link">Детям</a></li>
@@ -43,21 +43,21 @@
 			<div class="page__wrapper">
 				<section class="page__main main-section">
 					<div class="main-section__container">
-						<div class="main-section__content">
+						<div class="main-section__content _anim-on _anim-off">
 							<div class="main-section__title main-title">
-								<div class="main-title__label _anim-on _anim-off">воспитатель</div>
-								<h1 class="main-title__name _anim-on _anim-off">Спесивцева <br><span>Юлия
+								<div class="main-title__label">воспитатель</div>
+								<h1 class="main-title__name">Спесивцева <br><span>Юлия
 										Валерьевна</span></h1>
 							</div>
-							<div class="main-section__text text _anim-on _anim-off">Участница краевого профессионального
+							<div class="main-section__text text">Участница краевого профессионального
 								конкурса «Воспитатель
-								года Кубани» в 2023 году"</div>
-							<div class="main-section__social social _anim-on _anim-off">
+								года Кубани» в 2023 году</div>
+							<div class="main-section__social social">
 								<a href="https://t.me/yuliaspesivceva" target="_blank" class="social__link _icon-telegram"></a>
 								<a href="https://api.whatsapp.com/send/?phone=79189701121&text=Здравствуйте%2C+у+меня+есть+вопрос" target="_blank" class="social__link _icon-whatsapp"></a>
 								<a href="https://www.youtube.com/@user-vh2xn2vv1o/featured" target="_blank" class="social__link _icon-youtube"></a>
 							</div>
-							<div class="main-section__button button _anim-on _anim-off"><a href="#" class="button__link">Связаться</a></div>
+							<div class="main-section__button button"><a href="#" class="button__link">Связаться</a></div>
 						</div>
 						<div class="main-section__image image-main _anim-on _anim-off">
 							<picture><source srcset="img/image-01.webp" type="image/webp"><img class="image-main__photo" src="img/image-01.png" alt="#"></picture>
@@ -80,7 +80,7 @@
 								находить его сильные стороны. Поступать так, чтобы каждый ребёнок почувствовал:
 								возможности
 								заложены в нём самом."</div>
-							<div class="credo__button button _anim-on _anim-off"><a href="javascript://" class="button__link">Обо мне</a></div>
+							<div class="credo__button button _anim-on _anim-off"><a href="about.html" class="button__link">Обо мне</a></div>
 						</div>
 					</div>
 				</section>
@@ -163,11 +163,11 @@
 					<div class="slider__container">
 						<div class="slider__header">
 							<div class="slider__title title _anim-on _anim-off">
-								<h2 class="title__slider">Личные достижения</h2>
+								<h2 class="title__slider"><span>Личные достижения</span></h2>
 							</div>
 							<div class="slider__controls _anim-on _anim-off">
-								<button type="button" class="slider__arrow slider__arrow_left _icon-arrow-left"></button>
-								<button type="button" class="slider__arrow slider__arrow_right _icon-arrow-right"></button>
+								<button type="button" class="slider__arrow slider__arrow_left  button-disabled _icon-arrow-left"></button>
+								<button type="button" class="slider__arrow slider__arrow_right  button-disabled _icon-arrow-right"></button>
 							</div>
 						</div>
 						<div class="slider__slider-swiper swiper _anim-on _anim-off">
@@ -175,63 +175,72 @@
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/09.webp" type="image/webp"><img src="img/progress/09.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/09.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/02.webp" type="image/webp"><img src="img/progress/02.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/02.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/03.webp" type="image/webp"><img src="img/progress/03.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/03.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/04.webp" type="image/webp"><img src="img/progress/04.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/04.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/05.webp" type="image/webp"><img src="img/progress/05.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/05.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/06.webp" type="image/webp"><img src="img/progress/06.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/06.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/07.webp" type="image/webp"><img src="img/progress/07.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/07.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/08.webp" type="image/webp"><img src="img/progress/08.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/08.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
 								<div class="slider__slide swiper-slide">
 									<article class="item-slider">
 										<div class="item-slider__image">
-											<picture><source srcset="img/progress/01.webp" type="image/webp"><img src="img/progress/01.jpg" alt="Сharter"></picture>
+											<picture><source data-srcset="img/progress/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="swiper-lazy" data-src="img/progress/01.jpg" alt="Сharter"></picture>
+											<div class="swiper-lazy-preloader"></div>
 										</div>
 									</article>
 								</div>
@@ -244,7 +253,7 @@
 						<h2 class="map__heading _anim-on _anim-off"><span>Контакты</span></h2>
 						<div class="map__block block-map _anim-on _anim-off">
 							<div class="block-map__shell">
-								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aca02c5802d3a0679e229580203411f0e948e692e88ca4964baaa5475d321346f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false&_v=20230108200155"></script>
+								<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aca02c5802d3a0679e229580203411f0e948e692e88ca4964baaa5475d321346f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false&_v=20230115154239"></script>
 							</div>
 						</div>
 					</div>
@@ -310,10 +319,6 @@
 				</section>
 			</div>
 		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
 	</div>
 	<div id="popup-message-sent" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
@@ -347,8 +352,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20230108200155"></script> -->
-	<script src="js/app.min.js?_v=20230108200155"></script>
+
+	<script src="js/app.min.js?_v=20230115154239"></script>
 </body>
 
 </html>

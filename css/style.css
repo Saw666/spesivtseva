@@ -1847,6 +1847,11 @@ body::after {
   font-weight: 600;
   line-height: 94%;
   opacity: 0;
+  background: -o-linear-gradient(359.93deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
+  background: linear-gradient(90.07deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 @supports (font-size: clamp( 1.625rem , -1.6793478261rem  +  16.5217391304vw , 4rem )) {
@@ -1859,14 +1864,6 @@ body::after {
   .title__slider {
     font-size: calc(1.625rem + 2.375 * (100vw - 20rem) / 14.375);
   }
-}
-
-.title__slider span {
-  background: -o-linear-gradient(359.93deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
-  background: linear-gradient(90.07deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 ._loaded .title__slider {
@@ -2633,6 +2630,7 @@ textarea.form__input {
   font-weight: 600;
   line-height: 107%;
   opacity: 0;
+  display: block;
 }
 
 @supports (font-size: clamp( 1.875rem , 1.6662317328rem  +  1.0438413361vw , 2.5rem )) {
@@ -2658,6 +2656,7 @@ textarea.form__input {
 }
 
 .about-qualification__heading span {
+  display: block;
   background: -o-linear-gradient(359.93deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
   background: linear-gradient(90.07deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
   -webkit-background-clip: text;
@@ -2867,6 +2866,14 @@ textarea.form__input {
   .gallery-slider {
     margin-bottom: calc(0.625rem + 11.875 * (100vw - 20rem) / 59.875);
   }
+}
+
+.gallery-title span {
+  background: -o-linear-gradient(359.93deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
+  background: linear-gradient(90.07deg, #EBD51E 0.07%, #FE848F 50.98%, #82CBAC 99.95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .swiper {

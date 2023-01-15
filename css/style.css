@@ -2633,15 +2633,15 @@ textarea.form__input {
   white-space: none;
 }
 
-@supports (font-size: clamp( 1.875rem , 1.6662317328rem  +  1.0438413361vw , 2.5rem )) {
+@supports (font-size: clamp( 1.625rem , 1.3327244259rem  +  1.4613778706vw , 2.5rem )) {
   .about-qualification__heading {
-    font-size: clamp( 1.875rem , 1.6662317328rem  +  1.0438413361vw , 2.5rem );
+    font-size: clamp( 1.625rem , 1.3327244259rem  +  1.4613778706vw , 2.5rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 1.6662317328rem  +  1.0438413361vw , 2.5rem )) {
+@supports not (font-size: clamp( 1.625rem , 1.3327244259rem  +  1.4613778706vw , 2.5rem )) {
   .about-qualification__heading {
-    font-size: calc(1.875rem + 0.625 * (100vw - 20rem) / 59.875);
+    font-size: calc(1.625rem + 0.875 * (100vw - 20rem) / 59.875);
   }
 }
 
